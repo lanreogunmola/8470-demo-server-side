@@ -40,4 +40,4 @@ class Cloth(models.Model):
 		list_display = ('name',)
 
 	class JSONAPIMeta:
-		resource_name = "cloth"
+		resource_name = "cloths"

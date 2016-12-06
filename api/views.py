@@ -110,6 +110,6 @@ class ClothViewSet(viewsets.ModelViewSet):
 	"""
 	API endpoint that allows cloths to be viewed.
 	"""
-	resource_name = 'Cloths'
+	resource_name = 'cloths'
 	queryset = Cloth.objects.all()
 	serializer_class = ClothSerializer
