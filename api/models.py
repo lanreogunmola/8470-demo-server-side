@@ -29,13 +29,9 @@ class Profile(models.Model):
 
 class Cloth(models.Model):
 	name = models.CharField(max_length=200, blank=False)
-	#roles = models.CharField(max_length=200, blank=False, default="{\"admin\": false, \"researcher\": false, \"subject\": true}")
 	price = models.CharField(max_length=100, blank=False)
-	#age = models.IntegerField(blank=False)
 	size = models.CharField(max_length=200, blank=False)
 	image = models.CharField(max_length=500, blank=False)
-	#state = models.CharField(max_length=200, blank=False)
-	#ip = models.CharField(max_length=200, blank=False)
 	
 	def __str__(self):
 		return self.name
