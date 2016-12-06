@@ -15,3 +15,9 @@ class ProfileSerializer(serializers.ModelSerializer):
 	user = UserSerializer(read_only=True)
 	class Meta:
 		model = Profile
+
+class ClothSerializer(serializers.ModelSerializer):
+	#user = UserSerializer(read_only=True)
+	class Meta:
+		model = Cloth
+		fields = ('id', 'name', 'price', 'size', 'image')

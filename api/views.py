@@ -105,3 +105,11 @@ class ProfileViewSet(viewsets.ModelViewSet):
 	resource_name = 'profiles'
 	queryset = Profile.objects.all()
 	serializer_class = ProfileSerializer
+
+class ClothViewSet(viewsets.ModelViewSet):
+	"""
+	API endpoint that allows cloths to be viewed.
+	"""
+	resource_name = 'Cloths'
+	queryset = Cloth.objects.all()
+	serializer_class = ClothSerializer
